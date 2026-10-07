@@ -1,0 +1,32 @@
+CADENCE // DEADZONE — JUDGE TALKING POINTS
+
+30-SECOND EXPLANATION
+Cadence is the only player in the game. It receives a compact observation of
+the zombie-survival environment, chooses a tactical action through the official
+Cadence Brain, then receives the measured reward from the outcome. Its brain is
+checkpointed so the same learner continues across runs.
+
+WHAT IS LEARNED
+Cadence chooses high-level tactical behavior:
+KITE, STRAFE_LEFT, STRAFE_RIGHT, CHASE, HOLD, SEEK_HEALTH, SEEK_WEAPON.
+
+WHAT IS NOT LEARNED
+Low-level A* navigation, collision avoidance, emergency unstuck behavior,
+mandatory critical-health medkit behavior, boss-charge dodge, and corner escape
+are deterministic safety/body systems.
+
+WHY THIS MATTERS
+The deterministic body layer prevents navigation failures from overwhelming the
+learning problem, while Cadence still learns the strategic decisions that
+affect combat performance and survival.
+
+DEMO FLOW
+1. Start game.py.
+2. Point out that there is no human movement input.
+3. Show the Cadence learning/status HUD.
+4. Let Cadence clear waves and select tactics.
+5. Show best-area / survival telemetry.
+6. Restart or relaunch and explain that the same checkpoint is restored.
+
+DEVELOPMENT TEST
+Cadence reached Level 7 within 7 autonomous runs and was still improving.

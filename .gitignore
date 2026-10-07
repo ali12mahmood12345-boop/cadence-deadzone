@@ -1,0 +1,4 @@
+.venv/  
+__pycache__/  
+*.pyc  
+cadence_deadzone_official_brain_v2_backup.npz 

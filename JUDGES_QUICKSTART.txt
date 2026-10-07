@@ -1,0 +1,14 @@
+CADENCE // DEADZONE — QUICK START
+
+1. Open a terminal in this folder.
+2. Install dependencies:
+   python -m pip install -r requirements.txt
+
+3. Start:
+   python game.py
+
+Cadence plays automatically. No gameplay input is required.
+
+For the trained demo, keep these files in the same folder if provided:
+- cadence_deadzone_official_brain_v2.npz
+- cadence_training_stats.json
